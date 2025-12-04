@@ -14,9 +14,9 @@ The gallery is data-driven. You do not need to edit HTML to add new images.
     ```json
     {
         "id": 14,
-        "src": "images/my-art.jpg",
-        "title": "My Masterpiece",
-        "description": "Oil on canvas, 2024"
+        "src": "images/art.jpg",
+        "title": "Magnum Opus",
+        "description": "Nice things"
     }
     ```
     *Note: Ensure you add a comma `,` after the previous item's closing brace `}`.*
