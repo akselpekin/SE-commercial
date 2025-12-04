@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "src": "https://picsum.photos/400/600",
+        "title": "Abstract Harmony",
+        "description": "An exploration of color and form."
+    },
+    {
+        "id": 2,
+        "src": "https://picsum.photos/400/300",
+        "title": "Urban Solitude",
+        "description": "Capturing the quiet moments in the city."
+    },
+    {
+        "id": 3,
+        "src": "https://picsum.photos/400/500",
+        "title": "Nature's Whisper",
+        "description": "A detailed study of forest textures."
+    },
+    {
+        "id": 4,
+        "src": "https://picsum.photos/400/400",
+        "title": "Geometric Dreams",
+        "description": "Sharp lines meeting soft gradients."
+    },
+    {
+        "id": 5,
+        "src": "https://picsum.photos/400/550",
+        "title": "Portrait of Light",
+        "description": "Playing with shadows and highlights."
+    },
+    {
+        "id": 6,
+        "src": "https://picsum.photos/400/350",
+        "title": "Ocean Blue",
+        "description": "The depth of the sea."
+    },
+     {
+        "id": 7,
+        "src": "https://picsum.photos/400/600",
+        "title": "Abstract Harmony",
+        "description": "An exploration of color and form."
+    },
+    {
+        "id": 8,
+        "src": "https://picsum.photos/400/300",
+        "title": "Urban Solitude",
+        "description": "Capturing the quiet moments in the city."
+    },
+    {
+        "id": 9,
+        "src": "https://picsum.photos/400/500",
+        "title": "Nature's Whisper",
+        "description": "A detailed study of forest textures."
+    },
+    {
+        "id": 10,
+        "src": "https://picsum.photos/400/400",
+        "title": "Geometric Dreams",
+        "description": "Sharp lines meeting soft gradients."
+    },
+    {
+        "id": 11,
+        "src": "https://picsum.photos/400/550",
+        "title": "Portrait of Light",
+        "description": "Playing with shadows and highlights."
+    },
+    {
+        "id": 12,
+        "src": "https://picsum.photos/400/350",
+        "title": "Ocean Blue",
+        "description": "The depth of the sea."
+    }
+]
