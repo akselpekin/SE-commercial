@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Resume</h1>
+        <p>My professional experience</p>
+    </header>
+
+    <main id="resume">
+        <div class="content-container" id="resume-content">
+            <!-- Rendered from Markdown -->
+        </div>
+    </main>
+
+    <!-- Markdown Content -->
+    <script type="text/markdown" id="resume-markdown">
+# Professional Experience
+
+## Senior Artist | Creative Studio
+*2020 - Present*
+
+*   Led art direction for major campaigns.
+*   Mentored junior designers.
+*   Managed project timelines and deliverables.
+
+## Graphic Designer | Design Co.
+*2018 - 2020*
+
+*   Created visual assets for web and print.
+*   Collaborated with marketing teams.
+*   Developed brand identities for startups.
+
+# Education
+
+### Bachelor of Fine Arts
+*University of Art, 2014 - 2018*
+
+*   Major in Digital Arts
+*   Dean's List 2016-2018
+    </script>
+
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

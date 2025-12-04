@@ -18,6 +18,69 @@ body {
     padding: 20px;
 }
 
+/* Nav Bar */
+.top-nav {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.top-nav a:hover, .top-nav a.active {
+    background-color: var(--bg-color);
+    color: #000;
+}
+
+/* Content Container */
+.content-container {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-container h1, 
+.content-container h2, 
+.content-container h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-container h1:first-child {
+    margin-top: 0;
+}
+
+.content-container ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-container p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
 header {
     text-align: center;
     margin-bottom: 40px;

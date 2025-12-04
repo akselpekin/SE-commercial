@@ -1,75 +1,73 @@
-# Art Portfolio
+# Portfolio Website
 
-A modular, Pinterest-style masonry portfolio website featuring a responsive grid layout and an interactive lightbox for viewing full-size images.
+A modular, multi-page portfolio website featuring a responsive masonry gallery, a markdown-based resume page, and a contact links page.
 
-## How to Add New Art
+---
 
-The website is designed to be modular. You do not need to edit HTML to add new images. All content is managed via the `data.json` file.
+## How to Manage Content
 
-### Step 1: Prepare your Image
-1.  Save your image file (e.g., `art.jpg`) into the `images/` folder in the project directory.
+### 1. Adding New Art (Gallery)
+The gallery is data-driven. You do not need to edit HTML to add new images.
 
-### Step 2: Update the Data
-1.  Open the `data.json` file.
-2.  Add a new entry to the list inside the square brackets `[]`.
-3.  Use the following format:
+1.  **Save Image**: Place your image file (e.g., `my-art.jpg`) into the `images/` folder.
+2.  **Update Data**: Open `data.json` and add a new entry:
+    ```json
+    {
+        "id": 14,
+        "src": "images/my-art.jpg",
+        "title": "My Masterpiece",
+        "description": "Oil on canvas, 2024"
+    }
+    ```
+    *Note: Ensure you add a comma `,` after the previous item's closing brace `}`.*
 
-```json
-{
-    "id": 13,
-    "src": "images/art.jpg",
-    "title": "Title",
-    "description": "Description"
-}
-```
+### 2. Updating the Resume
+The resume page (`resume.html`) renders content from Markdown, making it very easy to write and format.
 
-**Note:** Ensure you add a comma `,` after the closing brace `}` of the *previous* item if you are appending to the list.
+1.  Open `resume.html`.
+2.  Scroll down to the `<script type="text/markdown" id="resume-markdown">` tag.
+3.  Edit the text inside using standard Markdown syntax:
+    *   `# Heading 1` for main titles.
+    *   `## Heading 2` for section titles (Experience, Education).
+    *   `*Italic*` or `**Bold**` for emphasis.
+    *   `* List item` for bullet points.
+
+### 3. Updating Links
+The links page (`links.html`) is a standard HTML page.
+
+1.  Open `links.html`.
+2.  Locate the `<main id="links">` section.
+3.  Edit the HTML content directly to add your email, phone, or social media links.
 
 ---
 
 ## Customization Guide
 
-You can easily change the look and feel of the site by editing `style.css`.
+You can change the look and feel by editing `style.css`.
 
-### Colors & Spacing
-Look for the `:root` section at the top of `style.css`. Change these hex codes to match your brand:
+### Colors & Theme
+Modify the CSS variables at the top of `style.css`:
 
 ```css
 :root {
-    --bg-color: #f5f5f5;   /* Background color of the whole page */
-    --card-bg: #ffffff;    /* Background color of individual cards */
+    --bg-color: #f5f5f5;   /* Page background */
+    --card-bg: #ffffff;    /* Card & Container background */
     --text-color: #333;    /* Main text color */
-    --gap: 16px;           /* Space between cards */
+    --gap: 16px;           /* Spacing */
 }
 ```
 
-### Grid Layout (Columns)
-The number of columns changes based on screen width. You can adjust these breakpoints in `style.css`:
+### Navigation Bar
+The top navigation bar styles are defined under the `.top-nav` class in `style.css`. You can change the background color, padding, or link styles there.
 
-*   **Default (Mobile)**: 1 Column
-*   **Tablets (>600px)**: 2 Columns
-*   **Laptops (>900px)**: 3 Columns
-*   **Desktops (>1100px)**: 4 Columns
-
-To change the maximum width of the gallery, find `#gallery` in `style.css`:
-```css
-#gallery {
-    max-width: 1600px; /* Adjust this value */
-}
-```
+### Grid Layout
+The gallery column count changes based on screen width (breakpoints at 600px, 900px, 1100px). You can adjust these media queries in `style.css`.
 
 ---
 
 ## Technical Details
 
-### Image Loading
-Images are set to `lazy` load by default in `script.js` to improve performance.
-```javascript
-img.loading = 'lazy'; // Options: 'lazy', 'eager', 'auto'
-```
-
-### Lightbox
-The site includes a built-in lightbox.
-*   **Activation**: Clicking a card adds the `.active` class to the `#lightbox` div.
-*   **Dismissal**: Clicking the dark background removes the `.active` class.
-*   **Animation**: Controlled via CSS transitions on `opacity` and `visibility`.
+*   **Frameworks**: Vanilla HTML, CSS, and JavaScript.
+*   **Markdown Parser**: Uses [Marked.js](https://github.com/markedjs/marked) to render the resume.
+*   **Image Loading**: Native lazy loading (`loading="lazy"`) is enabled for gallery images.
+*   **Lightbox**: Custom vanilla JS implementation.
